@@ -2,7 +2,7 @@
 
 ## Provided
 
-Together with this document we will provide a Exercise.zip file containing an eclipse project. This project is the basis for the task.
+Together with this document we provide `src` directory containing source code, which is the basis for the task.
 
 ## Expectation
 
@@ -12,7 +12,7 @@ Do not spend more than 2 hours on this exercise.
 
 ## Return
 
-After you have finished the task, send the code back to the provided e-mail. Please tell us how much time you have spent on the task. Also provide any external library that you have used.
+Start by forking this project to  your bitbucket account. tAfter you have finished the task, send a pull request to this repository. Please tell us how much time you have spent on the task. Also provide any external library that you have used.
 
 ## Scenario
 
