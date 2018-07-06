@@ -1,4 +1,4 @@
-# CHANGES by anl_can
+
 # Case Study: Java Engineer
 
 ## Provided
@@ -11,11 +11,7 @@ Implement the task as described below. You can start whenever you like and send 
 Add documentation like you would in a real project. Bring the code to a production standard (not more, not less).
 Do not spend more than 2 hours on this exercise.
 
-## Return
-
-Start by forking this project to  your bitbucket account. tAfter you have finished the task, send a pull request to this repository. Please tell us how much time you have spent on the task. Also provide any external library that you have used.
-
-## Scenario
+## User Story
 
 There is a producer (Producer) of price updates for stocks.
 This producer will generate constant price updates for a fix number of stocks.
@@ -31,3 +27,9 @@ The consumer is representing a legacy system that cannot consumer more than a ce
 The task of this exercise is to extend the LoadHandler to limit the updates per second to the consumer to a certain given number (MAX_PRICE_UPDATES).
 In order to achieve this, it is allowed to drop price updates, since otherwise the application will run out of memory, if the application will keep all of them.
 It is important that, if a price update will be send to the consumer, it has to be the most recent price.
+## Result
+- Fork the project
+- Implement your solution
+- Open a Pull-Request to our Repository
+
+Any question? just open an issue for us
