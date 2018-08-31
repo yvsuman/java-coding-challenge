@@ -10,10 +10,14 @@ public class Producer extends Thread {
 	
 	@Override
 	public void run() {
-		generateUpdates();
+		try {
+			generateUpdates();
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
 	}
 	
-	public void generateUpdates(){
+	public void generateUpdates() throws InterruptedException{
 		for (int i = 1; i < 100; i++) {
 			loadHandler.receive(new PriceUpdate("Apple", 97.85));
 			loadHandler.receive(new PriceUpdate("Google", 160.71));

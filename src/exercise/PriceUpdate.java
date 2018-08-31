@@ -1,5 +1,7 @@
 package exercise;
 
+import java.util.Objects;
+
 public class PriceUpdate {
 	
 	private final String companyName;
@@ -25,13 +27,15 @@ public class PriceUpdate {
 	
 	@Override
 	public boolean equals(Object obj) {
-		// TODO Please implement this method
-		return super.equals(obj);
+		 if (this == obj) return true;
+	        if (obj == null || getClass() != obj.getClass()) return false;
+	        PriceUpdate that = (PriceUpdate) obj;
+	        return Double.compare(that.price, price) == 0 &&
+	                Objects.equals(companyName, that.companyName);
 	}
 	
 	@Override
 	public int hashCode() {
-		// TODO Please implement this method
-		return super.hashCode();
+		return Objects.hash(companyName, price);
 	}
 }
